@@ -1,0 +1,84 @@
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 50px;
+    font-family: 'Galada', cursive;
+    border-bottom: 1px solid #626262;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 5px 20px;
+}
+
+.App-logo {
+    flex: 1
+}
+
+.App-logo a {
+    font-size: 23px;
+    font-weight: 800;
+    white-space: nowrap ;
+}
+
+.Header-categories {
+    flex: 7;
+}
+
+.header-category {
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.Header-action-bar{
+    height: 80%;
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.search-input {
+    font-family: 'Galada', cursive;
+    border: 1px solid #6b6b6b;
+    border-radius: 10px;
+    outline: none;
+    padding: 1px 15px;
+}
+
+.contact-us-button {
+    font-family: 'Galada', cursive;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #6b6b6b;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    box-sizing: border-box;
+    padding: 7px 15px;
+}
+
+    .contact-us-button:hover {
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        border: 1px solid black;
+    }
+
+@media screen and (max-width: 768px) { 
+    .search-input{
+       width: 80px;
+    }
+
+    .contact-us-button {
+        font-size: 11px;
+        padding: 3px 7px;
+        margin-right: 15px;
+    }
+}

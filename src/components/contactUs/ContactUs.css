@@ -1,0 +1,78 @@
+.Contact-us {
+    width: 500px;
+    height: max-content;    
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.contact-us-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contact-us-title {
+    font-family: 'Galada', cursive;
+    font-size: 30px;
+}
+
+.contact-us-close-btn {
+    position: absolute;
+    right: 35px;
+    cursor: pointer;
+}
+
+.contact-us-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 30px 50px;
+}
+
+.contact-us-form input[type=text], [type=email], textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-family: 'Galada', cursive;
+    box-sizing: border-box;
+    resize: vertical;
+    padding: 12px;
+    margin: 20px 0;
+}
+
+.contact-us-form button {
+    background-color: #ffffff;
+    border: none;
+    font-family: 'Galada', cursive;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
+}
+
+.submitting{
+    opacity: .5;
+    pointer-events: none;
+    cursor: none;
+}
+
+.submitted {
+    color: #4db046;
+}
+
+.full-muted {
+    top: 0;
+    z-index: 5;
+}
+
+@media (max-width: 768px) {
+    .Contact-us {
+        width: 100%;        
+    }
+  }

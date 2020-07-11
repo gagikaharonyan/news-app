@@ -1,0 +1,132 @@
+.Category-row {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.category-row-header {
+    width: 100%;
+    justify-content: flex-start;
+    color: #c23636;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.category-row-header div{
+    height: 5px;
+    background-color: #c23636;
+    border-radius: 5px;
+    opacity: .5;;
+}    
+
+.category-row-header span{
+    width: max-content;    
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    white-space: nowrap ;
+    margin: 0px 15px;
+}    
+
+.category-row-body {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.category-row-footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.see-more-button {
+    border: none;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+}
+
+    .see-more-button:hover {
+        opacity: .8;
+    }
+
+.Row-article {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    margin: 5px 15px;
+}
+
+    .Row-article:hover { 
+        background-color: #dedede;
+        opacity: .7;
+    }
+
+.row-article-body {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    padding: 0px 5px;
+}
+
+.row-article-img {
+    width: 200px;   
+    height: 130px;
+    overflow: hidden;
+}
+
+.row-article-img img{ 
+    width: 100%;
+    height: 100%;
+}
+
+.row-article-title {
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    margin: 7px 0px;
+}
+
+.row-article-description {
+    font-family: 'Josefin Sans';
+    font-size: 12px;
+    font-style: italic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+@media (max-width: 768px) {
+
+    .category-row-body {
+        flex-direction: column;
+    }
+
+    .Row-article {
+        width: 100%;
+        height: max-content;
+        flex-direction: row;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 10px
+    }
+
+    .Row-article a{
+        flex-direction: row;
+    }
+
+    .row-article-img {
+        width: 40%;
+    }
+
+    .row-article-body {
+        width: 60%;
+        margin-left: 10px;
+    }
+}
